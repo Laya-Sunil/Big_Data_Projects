@@ -6,3 +6,6 @@
 -- columns used in partition by should be in select clause as well
 -- cte works in hive but it runs alone, we cannot directly create external table from cte output
 -- while running in single node cluster as in our local, performing partition on huge amount of data may through exeeding max no of partition error
+
+-- PROJECT Description
+Here we are importing the data from mysql database healthcare using SQOOP import (ETL tool) into HIVE (Big data Hadoop analytics). Inside Hive we are analysing the data using hive query and store the output of the each query as an Hive external table. Export the contents of the external table to client DB via SQOOP export.
