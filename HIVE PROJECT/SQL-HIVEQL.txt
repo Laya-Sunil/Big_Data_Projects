@@ -1,0 +1,8 @@
+-- use backticks to represent column name alias
+-- inner join --> join
+-- left join --> left outer join
+-- right join --> right outer join
+-- all columns in select should appear in group by
+-- columns used in partition by should be in select clause as well
+-- cte works in hive but it runs alone, we cannot directly create external table from cte output
+-- while running in single node cluster as in our local, performing partition on huge amount of data may through exeeding max no of partition error
